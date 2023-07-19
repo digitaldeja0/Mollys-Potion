@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strange Effects</title>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <p>Molly's Potions</p>
+    </header>
+    <main>
+      <div id="overlay" class="popupDiv">
+        <p>Bottles Collected</p>
+        <p id="totalP"><span id="totalSpan">0</span> of 5</p>
+      </div>
+      <div id="popup" class="popupDiv">
+        <h1>Welcome Traveler</h1>
+        <p>You wake up in a strange garden.</p>
+        <p>A voice tells you to collect the potions around the garden to return back home.</p>
+        <p>Will the potions work?</p>
+        <h1>Instructions</h1>
+        <p>Use "W,S,D,A" key to navigate and your mouse to rotate.</p>
+        <p>Click on the bottle with your mouse when (and if) you find them.</p>
+        <button id="popupBtn">Begin Quest</button>
+      </div>
+      <canvas id="canvas"></canvas>
+    </main>
+    <footer>
+      <p>Created by Deja 2023</p>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
