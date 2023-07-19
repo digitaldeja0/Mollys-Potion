@@ -50,14 +50,14 @@ async function createScene() {
 
   const resultGarden = await BABYLON.SceneLoader.ImportMeshAsync(
     "",
-    "./models/",
+    "/models/",
     "my-garden.glb",
     scene
   );
 
   const resultBottles = await BABYLON.SceneLoader.ImportMeshAsync(
     "",
-    "./models/",
+    "/models/",
     "bottles.glb",
     scene
   );
@@ -119,31 +119,31 @@ window.addEventListener("resize", () => {
 });
 
 const gameOver = () => {
-  var newPopupDiv = document.createElement("div");
+  let newPopupDiv = document.createElement("div");
   newPopupDiv.setAttribute("id", "newpopup");
   newPopupDiv.setAttribute("class", "popupDiv");
 
   // Create the paragraph element
-  var newParagraph = document.createElement("p");
-  var paragraphText = document.createTextNode(
+  let newParagraph = document.createElement("p");
+  let paragraphText = document.createTextNode(
     "You take the potion and the world goes black."
   );
   newParagraph.appendChild(paragraphText);
 
-  var newParagraph2 = document.createElement("p");
-  var paragraphText2 = document.createTextNode(
+  let newParagraph2 = document.createElement("p");
+  let paragraphText2 = document.createTextNode(
     "You wake up in your bed, it was all a dream."
   );
   newParagraph2.appendChild(paragraphText2);
 
-  var newParagraph3 = document.createElement("p");
+  let newParagraph3 = document.createElement("p");
   var paragraphText3 = document.createTextNode(
     "On your lap a slice of 3 day old pizza. "
   );
   newParagraph3.appendChild(paragraphText3);
 
-  var newParagraph4 = document.createElement("p");
-  var paragraphText4 = document.createTextNode(
+  let newParagraph4 = document.createElement("p");
+  let paragraphText4 = document.createTextNode(
     " You'll never order from Dominos again."
   );
   newParagraph4.appendChild(paragraphText4);
